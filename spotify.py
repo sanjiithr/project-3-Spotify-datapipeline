@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 import re
 
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials(
-    client_id='60dccfe1de044ab4be74eac2a9a0968c',  
-    client_secret='73ecefc9b3dd4648b3e2cf1e106faf5e' 
+    client_id='client-id',  
+    client_secret='secret-id' 
 ))
 track_url = "https://open.spotify.com/track/361FMJC5uRSXzato4NE5Zg"
 track_id = re.search(r'track/([a-zA-Z0-9]+)', track_url).group(1)
